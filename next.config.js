@@ -1,6 +1,5 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+// Next.js config in plain JavaScript (no TypeScript types)
+const nextConfig = {
   /* config options here */
 };
 
