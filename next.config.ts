@@ -1,16 +1,28 @@
-/** @type {import('next').NextConfig} */
+import type { NextConfig } from "next";
 
-import withPWA from "next-pwa";
-
-const nextConfig = {
-  experimental: {
-    optimizePackageImports: ["antd"],
-  },
+const nextConfig: NextConfig = {
+  /* config options here */
 };
 
-export default withPWA({
-  dest: "public",
-  register: true,
-  skipWaiting: true,
-  disable: process.env.NODE_ENV === "development",
-})(nextConfig);
+export default nextConfig;
+
+// /** @type {import('next').NextConfig} */
+// import withPWAInit from "@ducanh2912/next-pwa";
+
+// const withPWA = withPWAInit({
+//   dest: "public",
+// });
+
+// const nextConfig = {
+//   eslint: {
+//     ignoreDuringBuilds: true,
+//   },
+//   typescript: {
+//     ignoreBuildErrors: true,
+//   },
+//   images: {
+//     unoptimized: true,
+//   },
+// };
+
+// export default withPWA(nextConfig);
